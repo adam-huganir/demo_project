@@ -1,7 +1,7 @@
 __version__ = "0.1.0"
 
 
-def my_project(arg1):
+def my_project(arg1: str):
     """
     A docstring
 
