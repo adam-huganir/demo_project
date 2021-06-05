@@ -5,7 +5,7 @@ description = "A demo project for demonstrating good structure and other best pr
 authors = ["Adam Huganir <adam@huganir.com>"]
 repository = "https://github.com/adam-huganir/demo_project"
 packages = [
-    { include = "demo_project", from="src", format = "sdist" },
+    { include = "demo_project", from = "src", format = "sdist" },
 ]
 
 [tool.poetry.dependencies]
@@ -24,3 +24,12 @@ black = "^21.5b2"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+
+[tool.pytest.ini]
+addopts = "--strict-markers"
+markers = ["slow"]
+doctest_optionflags = "NORMALIZE_WHITESPACE IGNORE_EXCEPTION_DETAIL"

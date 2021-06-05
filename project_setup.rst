@@ -10,3 +10,4 @@ Starting a new project from an empty folder
                      pytest flake8 mypy \
                      isort black \
                      sphinx
+
