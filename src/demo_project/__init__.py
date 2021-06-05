@@ -6,7 +6,7 @@ def my_project(arg1: str):
     A docstring
 
     bad demo code:
-    >>> myproject(10)
+    >>> my_project(10)
     50
 
     :param arg1:

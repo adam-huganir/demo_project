@@ -65,6 +65,7 @@ repos:
         entry: pytest
         types: [ python ]
         language: system
+        pass_filenames: false
         verbose: true
 
   # mypy checks
@@ -73,5 +74,6 @@ repos:
       - id: mypy
         name: mypy
         entry: mypy
+        exclude: "docs(\\\\|\\/).*\\.py"
         types: [ python ]
         language: system

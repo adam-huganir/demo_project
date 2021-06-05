@@ -16,7 +16,6 @@ flake8 = "^3.9.2"
 mypy = "^0.812"
 isort = "^5.8.0"
 pytest = "^6.2.4"
-pytest-mypy = "^0.8.1"
 Sphinx = "^4.0.2"
 pre-commit = "^2.13.0"
 black = "^21.5b2"
@@ -30,6 +29,6 @@ line-length = 120
 target-version = ['py38']
 
 [tool.pytest.ini]
-addopts = "--strict-markers"
+addopts = "--strict-markers  --doctest-modules"
 markers = ["slow"]
 doctest_optionflags = "NORMALIZE_WHITESPACE IGNORE_EXCEPTION_DETAIL"
